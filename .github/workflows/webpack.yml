@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: |
         npm install --save-dev typescript ts-node @types/node
-        npx tsc init
+        # npx tsc init
         npx ts-node src/sudoku.ts
         npx webpack
