@@ -12,7 +12,7 @@ export class Sudoku {
     return this.board;
   }
 
-  setValue(row: number, col: number, value: number | null): boolean {
+  setValue(row: number, col: number, value: number): boolean {
     if (row < 0 || row > 8 || col < 0 || col > 8) return false;
     this.board[row][col] = value;
     return true;
